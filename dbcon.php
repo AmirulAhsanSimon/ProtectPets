@@ -3,7 +3,7 @@
 $server= "localhost";
 $user= "root";
 $password = "";
-$db = "animal_welfare";
+$db = "ProtectPets-master";
 
 $con = mysqli_connect($server, $user, $password, $db);
 

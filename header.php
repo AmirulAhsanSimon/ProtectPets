@@ -39,9 +39,9 @@
           INFORMATIONS
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="https://www.tutorialspoint.com/how-to-take-care-of-pets-at-home">How to take care pets</a>
-          <a class="dropdown-item" href="https://www.avma.org/resources-tools/pet-owners/petcare/vaccinations">About vaccine</a>
-          <a class="dropdown-item" href="https://petbangla.com/">About food store</a>
+          <a class="dropdown-item" href="petcare.php">How to take care pets</a>
+          <a class="dropdown-item" href="vaccine.php">About vaccine</a>
+          <a class="dropdown-item" href="food.php">About food</a>
           <a class="dropdown-item" href="about_vets.php">About vets</a>
           <a class="dropdown-item" href="about_hospitals.php">About hospitals</a>
           <a class="dropdown-item" href="about_study.php">About study</a>

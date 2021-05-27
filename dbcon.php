@@ -1,10 +1,5 @@
 <?php
 
-$server= "localhost";
-$user= "root";
-$password = "";
-$db = "ProtectPets-master";
-
-$con = mysqli_connect($server, $user, $password, $db);
+$con = mysqli_connect("localhost", "root", "", "protectpets-master");
 
 ?>

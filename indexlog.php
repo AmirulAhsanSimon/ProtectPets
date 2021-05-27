@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,7 +15,7 @@
        $email = $_POST['email'];
        $password = $_POST['password'];
 
-       $email_search = "select * from registration where email='$email'";
+       $email_search = "select * from users where email='$email'";
        $query = mysqli_query($con, $email_search);
 
        $email_count = mysqli_num_rows($query);

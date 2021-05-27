@@ -1,6 +1,7 @@
 <?php 
 session_start();
-
+include 'header.php';
+include ('functions/functions.php');
 ?>
 <?php 
      if(isset($_GET['logout'])) {
@@ -23,12 +24,12 @@ if ( isset($_SESSION['username'])) {
 <!DOCTYPE html>
 <html>
 <head>
-     <title><?php echo "$email"; ?></title>
+     <title><?php echo "$username"; ?></title>
      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-  <a class="navbar-brand" href="#">Project Pets</a>
+  <a class="navbar-brand" href="#">Welcome to ProtectPets</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -45,14 +46,14 @@ if ( isset($_SESSION['username'])) {
 <div class="row">
   <div id="insert_post" class="col-sm-12">
     <center>
-    <form action="homeu.php?id=<?php echo $id; ?>" method="post" id="f" enctype="multipart/form-data">
+    <form action="homeu.php?id=<?php echo $user_id ?>" method="post" id="f" enctype="multipart/form-data">
     <textarea class="form-control" id="content" rows="4" name="content" placeholder="Here give the rescue posts!"></textarea><br>
     <label class="btn btn-warning" id="upload_image_button">Select Image
     <input type="file" name="upload_image" size="30">
     </label>
     <button id="btn-post" class="btn btn-success" name="sub">Post</button>
     </form>
-    
+    <?php insertPost();?>
     </center>
   </div>
 </div>

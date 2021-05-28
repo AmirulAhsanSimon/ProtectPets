@@ -7,6 +7,7 @@
 			
 		</div>
 		<img src="img/hospitals.jpg" class="rounded mx-auto" width="300">
+		<a class="mx-auto" href="map.php">Maps</a>
 		<div>
 			<br>
 			<h3 class="text-center text-info"></h3>

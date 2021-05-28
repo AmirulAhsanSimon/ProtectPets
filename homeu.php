@@ -43,6 +43,14 @@ if ( isset($_SESSION['username'])) {
     </form>
   </div>
 </nav>
+<h2 class="text-center text-light bg-success p-3">Welcome<?php
+      if ($_SESSION['user'] == 'user') {
+        echo ' User!';
+      }elseif($_SESSION['user'] == 'volunteer'){
+        echo ' Volunteer!';
+      }
+      ?></h2>
+
 <div class="row">
   <div id="insert_post" class="col-sm-12">
     <center>
